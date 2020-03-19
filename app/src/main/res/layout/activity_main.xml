@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center|bottom"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/title_lang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="हिंदी"
+            android:textColor="#282f35"
+            android:textSize="21dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/title_keyboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Keyboard"
+            android:textColor="#282f35"
+            android:textSize="21sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="top|center_horizontal"
+        android:layout_marginTop="4dp"
+        android:text="अपनी भाषा में व्यक्त करे"
+        android:textColor="#282f35"
+        android:textSize="21sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:src="@drawable/group_10" />
+
+        <TextView
+            android:id="@+id/keyboard_language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="हिंदीहिहिंदीहिहिंदीहिहिंदीहि"
+            android:layout_centerHorizontal="true"
+            android:visibility="visible"
+            android:textColor="#000"
+            android:textSize="45sp"
+
+
+            />
+    </RelativeLayout>
+
+
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text=""-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <TextView
+        android:id="@+id/join_friends"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Join your friends"
+        android:textColor="#000000"
+        android:textSize="21sp"/>
+
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="48dp"-->
+    <!--        android:layout_marginTop="23dp"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        android:layout_marginLeft="20dp"-->
+    <!--        android:layout_marginRight="20dp"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/join_friends"-->
+    <!--        >-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="0dp"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:layout_height="3dp"-->
+    <!--            android:layout_marginTop="74dp"-->
+    <!--            android:text="ONE TAP LOGIN /"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            android:textSize="16sp" />-->
+    <!--        <TextView-->
+    <!--            android:layout_width="0dp"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:layout_height="3dp"-->
+    <!--            android:layout_marginTop="74dp"-->
+    <!--            android:text="लॉग इन करें"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            android:textSize="16sp" />-->
+    <!--    </LinearLayout>-->
+
+    <TextView
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#3198f4"
+        android:gravity="center"
+        android:text="ONE TAP LOGIN / लॉग इन करें"
+
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:id="@+id/or_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        app:layout_constraintTop_toBottomOf="@id/login_button">
+
+        <TextView
+            android:id="@+id/tvText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="OR"
+            android:textAllCaps="true"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:layout_toLeftOf="@id/tvText" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:layout_toRightOf="@id/tvText" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/phone_number_login"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="Login with phone number"
+        android:textColor="#3198f4"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/or_layout" />
+
+
+</LinearLayout>
